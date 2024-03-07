@@ -149,16 +149,19 @@ function fusioneArray (array1, array2){
 
 
 // jsnack 5 /////////////////////////
-let a = 1;
+const output5 = document.querySelector('.output5');
+let a = 6;
 let b = 8;
 let array = [1,2,3,4,5,6,7,8,9,10];
 
+const outputRange = range(a, b, array);
+output5.innerHTML = outputRange;
 console.log(range(a, b, array));
 
 function range(a, b, array){
 
     if(a < b && a >= 0 && b < array.length){
-        return array.slice(a, b);
+        return array.slice(a, b + 1);
     }else{
         return 'errore'
     }

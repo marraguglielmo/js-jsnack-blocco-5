@@ -1,4 +1,4 @@
-// jsnack 1 //////
+// jsnack 1 ///////////////
 const zucchine = [
     {
         varietà : 'trombetta',
@@ -63,8 +63,9 @@ const zucchine = [
 const output1 = document.querySelector('.output1');
 
 const pesoFinaleZucchine = CalcoloPesoZucchine(zucchine);
+const pesoFinaleZucchineKg = pesoFinaleZucchine / 1000;
 
-output1.innerHTML = 'Il peso totale delle zucchine è: ' + pesoFinaleZucchine
+output1.innerHTML = 'Il peso totale delle zucchine è: ' + pesoFinaleZucchine + ' grammi. Ovvero ' + pesoFinaleZucchineKg + ' Kg';
 
 
 function CalcoloPesoZucchine(array){
@@ -74,3 +75,6 @@ function CalcoloPesoZucchine(array){
     }
     return pesoTotZucchine;
 }
+
+
+// jsnack 2 ///////////////

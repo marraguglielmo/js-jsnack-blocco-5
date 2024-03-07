@@ -132,8 +132,10 @@ output3.innerHTML = wordResult;
 const array1 = ['a', 'b', 'c', 'd'];
 const array2 = [1, 2, 3 , 4,];
 const arrayFuso = [];
+const output4 = document.querySelector('.output4');
 
-const ArrayFinale = fusioneArray(array1, array2);
+const arrayFinale = fusioneArray(array1, array2);
+output4.innerHTML = arrayFinale;
 
 function fusioneArray (array1, array2){
 
@@ -141,7 +143,6 @@ function fusioneArray (array1, array2){
         arrayFuso.push(array1[i]);
         arrayFuso.push(array2[i]);
     }
-    console.log(arrayFuso);
 
     return arrayFuso
 }

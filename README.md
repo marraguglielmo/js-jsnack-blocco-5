@@ -36,6 +36,14 @@ Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
 Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
 
+#### Svolgimento 3
+
+1. con una funzione che accetta la parola come argomento restituisco la parola con i metodi:
+
+- `.split('')` in modo da suddividere la stringa in sottostringhe
+- `.reverse()` in modo da capovolgere le sottostringhe
+- `.join('')` in modo da concatenare le sottostringhe capovolte
+
 <hr>
 
 ### **JSnack 4**

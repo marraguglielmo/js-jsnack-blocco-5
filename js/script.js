@@ -1,4 +1,4 @@
-// jsnack 1 ///////////////
+// jsnack 1 /////////////////////////
 const zucchine = [
     {
         varietà : 'trombetta',
@@ -77,7 +77,7 @@ function CalcoloPesoZucchine(array){
 }
 
 
-// jsnack 2 ///////////////
+// jsnack 2 /////////////////////////
 
 const output2 = document.querySelector('.output2');
 const limit = 10;
@@ -116,3 +116,14 @@ function calcoloPesoLunghe(array){
     return pesoTot;
     
 }
+
+// jsnack 3 /////////////////////////
+const output3 = document.querySelector('.output3');
+
+function reverseWord(word){
+
+    return word.split('').reverse().join('')
+}
+
+const wordResult = reverseWord('domani non avremo esercizi');
+output3.innerHTML = wordResult;

@@ -79,56 +79,6 @@ function CalcoloPesoZucchine(array){
 
 // jsnack 2 ///////////////
 
-// const zucchina1 = {
-//     peso : 700,
-//     lunghezza : 20 
-// };
-
-// const zucchina2 = {
-//     peso : 479,
-//     lunghezza : 15 
-// };
-
-// const zucchina3 = {
-//     peso : 655,
-//     lunghezza : 19 
-// };
-
-// const zucchina4 = {
-//     peso : 512,
-//     lunghezza : 13 
-// };
-
-// const zucchina5 = {
-//     peso : 698,
-//     lunghezza : 24 
-// };
-
-// const zucchina6 = {
-//     peso : 762,
-//     lunghezza : 23 
-// };
-
-// const zucchina7 = {
-//     peso : 390,
-//     lunghezza : 14 
-// };
-
-// const zucchina8 = {
-//     peso : 520,
-//     lunghezza : 17 
-// };
-
-// const zucchina9 = {
-//     peso : 436,
-//     lunghezza : 15 
-// };
-
-// const zucchina10 = {
-//     peso : 645,
-//     lunghezza : 21
-// };
-
 const output2 = document.querySelector('.output2');
 const limit = 10;
 let zucchineCorte = [];
@@ -147,13 +97,22 @@ for(let i = 0; i < limit ; i++){
 
     zucchina.lunghezza >= 15    ? zucchineLunghe.push(zucchina)
                                 :  zucchineCorte.push(zucchina)
-
-    
 }
 
 output2.innerHTML = `
     zucchine > 15 --> ${zucchineLunghe.length} <br>
     zucchine < 15 --> ${zucchineCorte.length} <br>
+    Il peso totale delle zucchine > 15 è ${calcoloPesoLunghe(zucchineLunghe)} grammi; <br>
+    Il peso totale delle zucchine < 15 è ${calcoloPesoLunghe(zucchineCorte)} grammi;
 `
 console.log(zucchineCorte);
 console.log(zucchineLunghe);
+
+function calcoloPesoLunghe(array){
+    let pesoTot = 0;
+    for(let i = 0; i < array.length; i++){
+        pesoTot += array[i].peso;
+    }
+    return pesoTot;
+    
+}

@@ -66,3 +66,11 @@ es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 Scrivi una funzione che accetti tre argomenti:
 un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
+
+#### Svolgimento 5
+
+1. inizializzo le variabili `a` e `b`
+2. inizializzo l'`array`
+3. con una funzione che accetta tre argomenti verifico che `a` sia minore di `b` e `b` minore o uguale a `array.length`
+   - vero--> con il metodo slice() estrapolo i numeri che vanno da indice `a` a indice `b`
+   - falso--> restituisco un messaggio d'errore

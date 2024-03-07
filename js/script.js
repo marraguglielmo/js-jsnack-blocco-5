@@ -146,3 +146,13 @@ function fusioneArray (array1, array2){
 
     return arrayFuso
 }
+
+
+// jsnack 5 /////////////////////////
+let a = 3;
+let b = 7;
+let array = [1,2,3,4,5,6,7,8,9,10];
+
+function range(a, b, array){
+    array.slice(a, b);
+}

@@ -78,7 +78,6 @@ function CalcoloPesoZucchine(array){
 
 
 // jsnack 2 /////////////////////////
-
 const output2 = document.querySelector('.output2');
 const limit = 10;
 let zucchineCorte = [];
@@ -127,3 +126,22 @@ function reverseWord(word){
 
 const wordResult = reverseWord('domani non avremo esercizi');
 output3.innerHTML = wordResult;
+
+
+// jsnack 4 /////////////////////////
+const array1 = ['a', 'b', 'c', 'd'];
+const array2 = [1, 2, 3 , 4,];
+const arrayFuso = [];
+
+const ArrayFinale = fusioneArray(array1, array2);
+
+function fusioneArray (array1, array2){
+
+    for(let i = 0; i < array1.length; i++){
+        arrayFuso.push(array1[i]);
+        arrayFuso.push(array2[i]);
+    }
+    console.log(arrayFuso);
+
+    return arrayFuso
+}

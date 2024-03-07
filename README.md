@@ -45,12 +45,19 @@ Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (
 - `.join('')` in modo da concatenare le sottostringhe capovolte
 
 2. assegno ad una costante il risultato della funzione e stampo la costante in pagina
+
 <hr>
 
 ### **JSnack 4**
 
 Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+#### Svolgimento 4
+
+1. creo due array con lo stesso numero di elementi e un array vuoto
+2. con una funzione che accetta due argomenti ciclo uno dei due array e ad ogni ciclo pusho alternativamente gli elementi di ciascun array
+3. la funzione restituisce l'array fuso
 
 <hr>
 

@@ -129,6 +129,7 @@ function CalcoloPesoZucchine(array){
 //     lunghezza : 21
 // };
 
+const output2 = document.querySelector('.output2');
 const limit = 10;
 let zucchineCorte = [];
 let zucchineLunghe = [];
@@ -136,7 +137,7 @@ let zucchineLunghe = [];
 for(let i = 0; i < limit ; i++){
     //creo randomicamente i valori delle proprietà
     let lunghezza = Math.ceil(Math.random() * (30 - 8)) + 8;
-    let peso = Math.ceil(Math.random() * (800 - 300)) + 300;
+    let peso = Math.ceil(Math.random() * (800 - 100)) + 300;
     
     //creo l'oggetto
     let zucchina = {
@@ -144,6 +145,15 @@ for(let i = 0; i < limit ; i++){
         peso : peso
     }
 
-    
+    zucchina.lunghezza >= 15    ? zucchineLunghe.push(zucchina)
+                                :  zucchineCorte.push(zucchina)
+
     
 }
+
+output2.innerHTML = `
+    zucchine > 15 --> ${zucchineLunghe.length} <br>
+    zucchine < 15 --> ${zucchineCorte.length} <br>
+`
+console.log(zucchineCorte);
+console.log(zucchineLunghe);

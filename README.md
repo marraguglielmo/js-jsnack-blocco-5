@@ -12,20 +12,36 @@ Calcola quanto pesano tutte le zucchine.
 3. richiamo la funzione in una costante
 4. stampo la costante
 
+<hr>
+
 ### **JSnack 2**
 
 Crea 10 oggetti che rappresentano una zucchina.
 Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
+#### Svolgimento 2
+
+1. creo 10 oggetti, con le proprietà `peso` e `lunghezza`
+2. creo due array vuoti
+3. con una condizione verifico se le zucchine hanno lunghezza maggiore di 15
+   - vero--> pusho nell `arrayLunghe`
+   - falso--> pusho nell `arrayCorte`
+
+<hr>
+
 ### **JSnack 3**
 
 Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+
+<hr>
 
 ### **JSnack 4**
 
 Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+<hr>
 
 ### **JSnack 5**
 

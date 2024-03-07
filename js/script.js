@@ -149,10 +149,18 @@ function fusioneArray (array1, array2){
 
 
 // jsnack 5 /////////////////////////
-let a = 3;
-let b = 7;
+let a = 1;
+let b = 8;
 let array = [1,2,3,4,5,6,7,8,9,10];
 
+console.log(range(a, b, array));
+
 function range(a, b, array){
-    array.slice(a, b);
+
+    if(a < b && a >= 0 && b < array.length){
+        return array.slice(a, b);
+    }else{
+        return 'errore'
+    }
+    
 }

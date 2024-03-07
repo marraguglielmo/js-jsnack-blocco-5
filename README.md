@@ -22,11 +22,12 @@ Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
 #### Svolgimento 2
 
-1. creo 10 oggetti, con le proprietà `peso` e `lunghezza`
-2. creo due array vuoti
-3. con una condizione verifico se le zucchine hanno lunghezza maggiore di 15
-   - vero--> pusho nell `arrayLunghe`
-   - falso--> pusho nell `arrayCorte`
+1. con un ciclo creo 10 oggetti, assegno alle proprietà `peso` e `lunghezza` numeri casuali da 300 a 800 grammi per il peso, da 8 a 30 cm per la lunghezza.
+2. creo l'oggetto zucchina
+3. creo due array vuoti
+4. con una condizione verifico se le zucchine hanno lunghezza maggiore di 15
+   - vero--> pusho nell `zucchineLunghe`
+   - falso--> pusho nell `zucchineCorte`
 
 <hr>
 

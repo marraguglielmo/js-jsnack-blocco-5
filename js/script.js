@@ -129,3 +129,21 @@ function CalcoloPesoZucchine(array){
 //     lunghezza : 21
 // };
 
+const limit = 10;
+let zucchineCorte = [];
+let zucchineLunghe = [];
+
+for(let i = 0; i < limit ; i++){
+    //creo randomicamente i valori delle proprietà
+    let lunghezza = Math.ceil(Math.random() * (30 - 8)) + 8;
+    let peso = Math.ceil(Math.random() * (800 - 300)) + 300;
+    
+    //creo l'oggetto
+    let zucchina = {
+        lunghezza : lunghezza,
+        peso : peso
+    }
+
+    
+    
+}

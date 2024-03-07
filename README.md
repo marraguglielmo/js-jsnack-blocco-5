@@ -44,6 +44,7 @@ Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (
 - `.reverse()` in modo da capovolgere le sottostringhe
 - `.join('')` in modo da concatenare le sottostringhe capovolte
 
+2. assegno ad una costante il risultato della funzione e stampo la costante in pagina
 <hr>
 
 ### **JSnack 4**

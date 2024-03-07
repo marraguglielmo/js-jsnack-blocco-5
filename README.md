@@ -28,6 +28,7 @@ Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 4. con una condizione verifico se le zucchine hanno lunghezza maggiore di 15
    - vero--> pusho nell `zucchineLunghe`
    - falso--> pusho nell `zucchineCorte`
+5. con una funzione ciclo i due array e aggiungo alla somma il peso di ogni zucchina, come nell esercizio precedente
 
 <hr>
 
